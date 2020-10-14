@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1199199908354052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4349624644392574}
+  - component: {fileID: 114191385831623192}
+  - component: {fileID: 212703411035904756}
+  - component: {fileID: 65719185660373716}
+  m_Layer: 0
+  m_Name: GameMgr
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4349624644392574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199199908354052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4342842799904660}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114191385831623192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199199908354052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc1fb06e00b8a24084682d12e23f74b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tile: {fileID: 1637206084843946, guid: 9fe155e414eba3348a64c670ca5ff68f, type: 3}
+  cols: 15
+  rows: 15
+  mines: 3
+  sprites:
+  - {fileID: 21300000, guid: 3524d7674be238b43b8ab8e76f2b01ed, type: 3}
+  - {fileID: 21300000, guid: 5516b6f962e7a854dbfcf139dfcc6bac, type: 3}
+  - {fileID: 21300000, guid: 71785354282c098459ab2f40681f8488, type: 3}
+  - {fileID: 21300000, guid: e6490f35912193649aa9a6eae1ef556f, type: 3}
+  - {fileID: 21300000, guid: db1344d117357e74499e37c0ad0e9299, type: 3}
+  - {fileID: 21300000, guid: ffe70fefc1e4e3b4294dd4d2f8bc9d89, type: 3}
+  - {fileID: 21300000, guid: cfb03e4fa71169140bd9118ff20f1d19, type: 3}
+  - {fileID: 21300000, guid: f9779f9a0222d244c8d104e7873e648f, type: 3}
+  - {fileID: 21300000, guid: 73d55cdc5dbe55e4c87a7875092ec81b, type: 3}
+  - {fileID: 21300000, guid: 5d7716c538b53ca4bb3a20c6ad73951f, type: 3}
+  - {fileID: 21300000, guid: 3477c1b358384b2409ab861de4d10be3, type: 3}
+  - {fileID: 21300000, guid: b59aef54411549f48b8451fc4a01b2b7, type: 3}
+  - {fileID: 21300000, guid: 49c78e7ba911f0f4d8bf477ba15358f9, type: 3}
+  - {fileID: 21300000, guid: f316f208142dc7f46b4b06702e1e63ce, type: 3}
+  - {fileID: 21300000, guid: af8fadb5f11317f449c47b90b4ea8fbf, type: 3}
+  currState: 0
+  minesRemaining: 0
+  time: 0
+  canvas: {fileID: 1677199018946090, guid: adea3db1f7ecac24db6031edb63f98b6, type: 3}
+  uiTimer: {fileID: 0}
+  uiMines: {fileID: 0}
+  timerText: {fileID: 0}
+  minesText: {fileID: 0}
+  restart: {fileID: 0}
+  settingsStrings:
+  - Easy
+  - Medium
+  - Hard
+  - Custom
+  - Start
+  pregamePanel: {fileID: 0}
+  settingsButton: {fileID: 1580850370793668, guid: 950fae5b7af853745a356bd55e6da98a,
+    type: 3}
+  descriptionButton: {fileID: 0}
+  customButtom: {fileID: 0}
+  board: []
+--- !u!212 &212703411035904756
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199199908354052}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!65 &65719185660373716
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199199908354052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1705584402931502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4342842799904660}
+  m_Layer: 0
+  m_Name: Center
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4342842799904660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705584402931502}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4349624644392574}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
